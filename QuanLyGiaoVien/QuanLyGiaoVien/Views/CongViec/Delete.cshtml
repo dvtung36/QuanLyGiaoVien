@@ -1,0 +1,73 @@
+﻿@model QuanLyGiaoVien.Models.CONGVIEC
+@{ ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn có thực sự muốn xóa công việc này không?</h3>
+<div>
+    <h4>Xóa Công Việc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLoaiCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoaiCV)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TenCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenCV)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongCV)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DonVi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonVi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongTG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongTG)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VaiTro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VaiTro)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>}
+</div>

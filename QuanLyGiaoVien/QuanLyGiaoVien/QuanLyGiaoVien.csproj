@@ -216,6 +216,25 @@
     <Content Include="Views\ChucVuChinhQuyen\Index.cshtml" />
     <Content Include="Views\ChucVuDang\Index.cshtml" />
     <Content Include="Views\ChucDanh\Index.cshtml" />
+    <Content Include="Views\HocVi\Create.cshtml" />
+    <Content Include="Views\HocVi\Delete.cshtml" />
+    <Content Include="Views\HocVi\Edit.cshtml" />
+    <Content Include="Views\HocHam\Create.cshtml" />
+    <Content Include="Views\HocHam\Delete.cshtml" />
+    <Content Include="Views\HocHam\Edit.cshtml" />
+    <Content Include="Views\CongViec\Create.cshtml" />
+    <Content Include="Views\CongViec\Delete.cshtml" />
+    <Content Include="Views\CongViec\Edit.cshtml" />
+    <Content Include="Views\GiaoVien\Create.cshtml" />
+    <Content Include="Views\GiaoVien\Delete.cshtml" />
+    <Content Include="Views\GiaoVien\Edit.cshtml" />
+    <Content Include="Views\DoiTuongGiangDay\Create.cshtml" />
+    <Content Include="Views\DoiTuongGiangDay\Delete.cshtml" />
+    <Content Include="Views\DoiTuongGiangDay\Edit.cshtml" />
+    <Content Include="Views\Lop\Index.cshtml" />
+    <Content Include="Views\Lop\Create.cshtml" />
+    <Content Include="Views\Lop\Delete.cshtml" />
+    <Content Include="Views\Lop\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -227,7 +246,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\images\" />
     <Folder Include="Views\HocPhan\" />
-    <Folder Include="Views\Lop\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,82 @@
+﻿@model QuanLyGiaoVien.Models.CONGVIEC
+
+@{ ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Chỉnh sửa Thông tin Công Việc</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.MaCV)
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaCV, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MaCV, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.MaCV, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaLoaiCV, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MaLoaiCV, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.MaLoaiCV, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TenCV, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TenCV, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.TenCV, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SoLuongCV, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SoLuongCV, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.SoLuongCV, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DonVi, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.DonVi, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.DonVi, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SoLuongTG, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SoLuongTG, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.SoLuongTG, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.VaiTro, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.VaiTro, new { htmlAttributes = new { @class = "form-control", @style = "width:500px;height:40px;background: #e8f0fe !important;" } })
+            @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
