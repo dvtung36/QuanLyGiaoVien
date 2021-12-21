@@ -1,0 +1,59 @@
+﻿@*KHOA*@
+
+@using QuanLyGiaoVien.Models;
+@model IEnumerable<KHOA>
+
+@{ ViewBag.Title = "Khoa";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Quản Lý Khoa</h2>
+        </div>
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+
+                <p>
+                    @Html.ActionLink("Create new", "Create")
+
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model =>model.MaKhoa)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenKhoa)
+                        </th>
+               
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaKhoa)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenKhoa)
+                            </td>
+                          
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.MaKhoa }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.MaKhoa })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+

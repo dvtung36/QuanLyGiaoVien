@@ -1,0 +1,89 @@
+﻿@*THONGTINGIANGDAY*@
+
+@using QuanLyGiaoVien.Models;
+@model IEnumerable<TTGIANGDAY>
+
+@{ ViewBag.Title = "TTGD";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Xem thông tin giảng dạy</h2>
+        </div>
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaGV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaLop)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaDT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SoTiet)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NgayBD)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NgayKT)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.GioChuan)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ThoiDiemSua)
+                        </th>
+                       
+
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaGV)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaLop)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaDT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoTiet)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgayBD)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgayKT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GioChuan)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ThoiDiemSua)
+                            </td>
+                           
+                        </tr>
+                    }
+
+                </table>
+

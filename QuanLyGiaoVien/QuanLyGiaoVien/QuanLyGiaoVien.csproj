@@ -43,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -136,10 +144,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BoMonController.cs" />
+    <Compile Include="Controllers\CongViecController.cs" />
+    <Compile Include="Controllers\DoiTuongGiangDayController.cs" />
     <Compile Include="Controllers\GiaoVienController.cs" />
+    <Compile Include="Controllers\HocHamController.cs" />
+    <Compile Include="Controllers\HocViController.cs" />
+    <Compile Include="Controllers\KhoaController.cs" />
+    <Compile Include="Controllers\ThongTinGiangDayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BOMON.cs" />
+    <Compile Include="Models\CHUCDANHCMNV.cs" />
+    <Compile Include="Models\CHUCVUCQ.cs" />
+    <Compile Include="Models\CHUCVUDANG.cs" />
+    <Compile Include="Models\CONGVIEC.cs" />
+    <Compile Include="Models\CTCONGVIEC.cs" />
+    <Compile Include="Models\DINHMUC.cs" />
+    <Compile Include="Models\DOITUONGGD.cs" />
+    <Compile Include="Models\DOITUONGMIENGIAM.cs" />
+    <Compile Include="Models\GIAOVIEN.cs" />
+    <Compile Include="Models\HOCHAM.cs" />
+    <Compile Include="Models\HOCPHAN.cs" />
+    <Compile Include="Models\HOCVI.cs" />
+    <Compile Include="Models\KHOA.cs" />
+    <Compile Include="Models\LOAICV_DM.cs" />
+    <Compile Include="Models\LOAIHP_DM.cs" />
+    <Compile Include="Models\LOP.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\TTCDCMNV.cs" />
+    <Compile Include="Models\TTCHUCVUCQ.cs" />
+    <Compile Include="Models\TTCHUCVUDANG.cs" />
+    <Compile Include="Models\TTGIANGDAY.cs" />
+    <Compile Include="Models\TTHOCHAM.cs" />
+    <Compile Include="Models\TTHOCVI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +198,16 @@
     <Content Include="Views\GiaoVien\Index.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\CongViec\Index.cshtml" />
+    <Content Include="Views\BoMon\Index.cshtml" />
+    <Content Include="Views\HocHam\Index.cshtml" />
+    <Content Include="Views\HocVi\Index.cshtml" />
+    <Content Include="Views\Khoa\Index.cshtml" />
+    <Content Include="Views\DoiTuongGiangDay\Index.cshtml" />
+    <Content Include="Views\ThongTinGiangDay\Index.cshtml" />
+    <Content Include="Views\Khoa\Create.cshtml" />
+    <Content Include="Views\Khoa\Delete.cshtml" />
+    <Content Include="Views\Khoa\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -168,7 +218,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\images\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,59 @@
+﻿@*HocVi*@
+
+@using QuanLyGiaoVien.Models;
+@model IEnumerable<HOCVI>
+
+@{ ViewBag.Title = "Hoc vi";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Quản Lý Học Vị</h2>
+        </div>
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+
+                <p>
+                    @Html.ActionLink("Create new", "Create")
+
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaHV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenHV)
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaHV)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenHV)
+                            </td>
+
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.MaHV }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.MaHV })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+

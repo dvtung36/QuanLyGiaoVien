@@ -65,8 +65,12 @@ D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\System.Web.Webpages.R
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\System.Web.Helpers.xml
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\System.Web.Mvc.xml
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.csprojAssemblyReference.cache
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.csproj.CoreCompileInputs.cache
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.csproj.CopyComplete
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.dll
 D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.pdb
+D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\EntityFramework.dll
+D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\EntityFramework.SqlServer.dll
+D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\EntityFramework.xml
+D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\bin\EntityFramework.SqlServer.xml
+D:\GitHub\QuanLyGiaoVien\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.csprojAssemblyReference.cache

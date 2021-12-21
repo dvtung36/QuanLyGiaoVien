@@ -1,0 +1,90 @@
+﻿@*CongViec*@
+
+@using QuanLyGiaoVien.Models;
+@model IEnumerable<CONGVIEC>
+
+@{ ViewBag.Title = "CongViec";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Quản Lý Công Việc</h2>
+        </div>
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+
+                <p>
+                    @Html.ActionLink("Create new", "Create")
+
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaCV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaLoaiCV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenCV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SoLuongCV)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DonVi)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SoLuongTG)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.VaiTro)
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaCV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaLoaiCV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenCV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuongCV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DonVi)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuongTG)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VaiTro)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.MaCV }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.MaCV })
+                    </td>
+                </tr>
+                    }
+
+                </table>
+
