@@ -145,12 +145,17 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BoMonController.cs" />
+    <Compile Include="Controllers\ChucDanhController.cs" />
+    <Compile Include="Controllers\ChucVuChinhQuyenController.cs" />
+    <Compile Include="Controllers\ChucVuDangController.cs" />
     <Compile Include="Controllers\CongViecController.cs" />
     <Compile Include="Controllers\DoiTuongGiangDayController.cs" />
     <Compile Include="Controllers\GiaoVienController.cs" />
     <Compile Include="Controllers\HocHamController.cs" />
+    <Compile Include="Controllers\HocPhanController.cs" />
     <Compile Include="Controllers\HocViController.cs" />
     <Compile Include="Controllers\KhoaController.cs" />
+    <Compile Include="Controllers\LopController.cs" />
     <Compile Include="Controllers\ThongTinGiangDayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -208,6 +213,9 @@
     <Content Include="Views\Khoa\Create.cshtml" />
     <Content Include="Views\Khoa\Delete.cshtml" />
     <Content Include="Views\Khoa\Edit.cshtml" />
+    <Content Include="Views\ChucVuChinhQuyen\Index.cshtml" />
+    <Content Include="Views\ChucVuDang\Index.cshtml" />
+    <Content Include="Views\ChucDanh\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -218,6 +226,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\images\" />
+    <Folder Include="Views\HocPhan\" />
+    <Folder Include="Views\Lop\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
