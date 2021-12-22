@@ -235,6 +235,15 @@
     <Content Include="Views\Lop\Create.cshtml" />
     <Content Include="Views\Lop\Delete.cshtml" />
     <Content Include="Views\Lop\Edit.cshtml" />
+    <Content Include="Views\BoMon\Create.cshtml" />
+    <Content Include="Views\BoMon\Delete.cshtml" />
+    <Content Include="Views\BoMon\Edit.cshtml" />
+    <Content Include="Views\ChucVuChinhQuyen\Create.cshtml" />
+    <Content Include="Views\ChucVuChinhQuyen\Delete.cshtml" />
+    <Content Include="Views\ChucVuChinhQuyen\Edit.cshtml" />
+    <Content Include="Views\ChucVuDang\Create.cshtml" />
+    <Content Include="Views\ChucVuDang\Delete.cshtml" />
+    <Content Include="Views\ChucVuDang\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,7 +1,65 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿@*BÔMN*@
 
-<h2>Index</h2>
+@using QuanLyGiaoVien.Models;
+@model IEnumerable<CHUCVUDANG>
+
+@{ ViewBag.Title = "Chuc vu dang";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="table-agile-info">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Quản Lý Chức vụ đảng</h2>
+        </div>
+        <div>
+            <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+
+                <p>
+                    @Html.ActionLink("Create new", "Create")
+
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaCVD)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TenCVD)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MaDTMG)
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaCVD)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenCVD)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaDTMG)
+                            </td>
+
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.MaCVD }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.MaCVD })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
 

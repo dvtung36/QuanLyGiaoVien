@@ -1,0 +1,47 @@
+﻿@model QuanLyGiaoVien.Models.CHUCVUCQ
+
+@{ ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Bạn có chắc chắn muốn xóa chức vụ chính quyền này</h3>
+<div>
+    <h4>Xóa chức vụ chính quyền</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaCVCQ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCVCQ)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TenCVCQ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenCVCQ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaDTMG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaDTMG)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>}
+</div>

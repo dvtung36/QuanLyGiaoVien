@@ -56,7 +56,7 @@ namespace QuanLyGiaoVien.Controllers
         {
             KHOA khoa = db.KHOAs.Find(id);
             db.KHOAs.Remove(khoa);
-         //   db.SaveChanges();
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 
